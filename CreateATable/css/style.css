@@ -1,0 +1,114 @@
+html {
+    height: 100%;
+    transition: 0.5s;
+    width: 100%;
+}
+
+body {
+    align-items: flex-start;
+    background: white;
+    box-sizing: border-box;
+    display: flex;
+    font-family: Helvetica;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.buttonContainer {
+    align-items: center;
+    background: #217245;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 2vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.actionButton {
+    background: none;
+    border-left: 0.01vw solid black;
+    border-right: 0.01vw solid black;
+    border: none;
+    color: #dce6e9;
+    cursor: pointer;
+    font-size: 0.9vw;
+    height: 100%;
+    transition: 0.5s;
+    width: 8%;
+}
+
+.actionButton:hover {
+    background: #036036;
+}
+
+.actionButton:active {
+    background: #036036;
+}
+
+.activeButton {
+    background: #036036;
+}
+
+input#colorPickerElement {
+    display: none;
+    transition: 0.5s;
+}
+
+.dataTable {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 3vw 0 0 0;
+    height: 100%;
+    max-height: max-content;
+    justify-content: flex-start;
+    transition: 0.5s;
+    width: 98%;
+}
+
+.dataTable tbody:last-child tr:last-child{
+    border-bottom: 0.1vw dashed gray;
+}
+
+tbody {
+    min-height: 3.2vw;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.tableRow {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    transition: 0.5s;
+    min-height: 3vw;
+    min-width: 100%;
+    border: 0.1vw dashed gray;
+    border-bottom: none;
+    position: relative;
+}
+
+.tableData {
+    border: 0.25vw solid black;
+    font-size: 1vw;
+    padding: 0.75%;
+    text-align: center;
+    transition: 0.5s;
+    outline: none;
+    min-height: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
