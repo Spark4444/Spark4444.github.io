@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mettaton NEO Battle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/app.ico">
+  </head>
+  <body> 
+    <!-- audio files -->
+    <audio id="audio" src="audio/NEO.ogg" autoplay loop muted></audio>
+    <audio id="audio1" src="audio/selectSound.mp3" autoplay></audio>
+    <audio id="audio2" src="audio/aCybersWorld.mp3" autoplay loop></audio>
+    <audio id="audio3" src="audio/playerDeath.mp3" autoplay></audio>
+    <audio id="audio4" src="audio/start.mp3" autoplay></audio>
+    <audio id="audio5" src="audio/playerAttack.mp3" autoplay></audio>
+    <audio id="audio6" src="audio/mettatonSpeak.mp3" autoplay></audio>
+    <audio id="audio7" src="audio/metatonSpeakInBattle.mp3" autoplay></audio>
+    <audio id="audio8" src="audio/damage.mp3" autoplay></audio>
+    <audio id="audio9" src="audio/dealGoneWrong.mp3" autoplay loop muted></audio>
+    <audio id="audio10" src="audio/mettatonAppear.mp3" autoplay></audio>
+    <audio id="audio11" src="audio/shoot.mp3" autoplay></audio>
+    <audio id="audio12" src="audio/mettatonNEOTheme.mp3" autoplay loop muted></audio>
+    <audio id="audio13" src="audio/explosion.mp3" autoplay></audio>
+    <audio id="audio14" src="audio/mettatonDeath.mp3" autoplay></audio>
+    <audio id="audio15" src="audio/heal.mp3" autoplay></audio>
+    <!-- starting menu -->
+    <div class="startingMenu">
+    <div class="play">PLAY</div>
+    <div class="slider">
+    <input type="range" class="volume" min="0" max="100" value="50" oninput="rangeValue.innerText =`${this.value}%`">
+    <p id="rangeValue"></p>
+    </div>
+    <div class="updatePageInfo">press esc to restart the game</div>
+    <div class="exitButton" onclick="window.close()">exit</div>
+    <img src="img/fullscreen.png" class="fullScreenButton" onclick="enableFullScreen()">
+    </div>
+    <!-- starting animation -->
+    <div class="startingAnimation">
+    <img src="img/frisk.png" class="frisk hidden">
+    </div>
+    <!-- heart -->
+    <img class="heart hidden" src="img/heart.png" alt="">
+    <!-- attack content -->
+    <div class="attackingSection hidden">
+      <img src="img/attack.gif" class="attackingGIF" alt="">
+      <div class="damageDealt">72</div>
+      <div class="mettatonsHPBackground"><div class="mettatonsHP"></div></div>
+    </div>
+    <!-- main content -->
+    <div class="inGameScreen hidden"> 
+    <div class="mettatonSection">
+      <img class="mettatonGIF" src="img/mettaton.gif" alt="">
+      <div class="chatBox" style="opacity: 0;">
+      <div class="triangle"></div>
+      <div class="textBox"></div>  
+      </div>
+    </div>
+    <div class="playerMovingSection">
+        <div class="playerMovementBox"></div>
+    </div>
+    <div class="statSection">
+        <div class="name">CHARA</div>
+        <div class="lv">lv 14</div>
+        <div class="hpText">HP</div>
+        <div class="playersHPBackground"><div class="playersHP"></div></div>
+         <div class="playersHPText">72/72</div>
+    </div>
+    <div class="battleSection">
+      <div class="actionButton"><img class="buttonImg" src="img/fight.png">FIGHT</div>
+      <div class="actionButton"><img class="buttonImg" src="img/act.png">ACT</div>
+      <div class="actionButton"><img class="buttonImg" src="img/item.png">ITEM</div>
+      <div class="actionButton"><img class="buttonImg" src="img/mercy.png">MERCY</div>
+    </div>
+    </div>
+    <!-- particles -->
+    <div class="particles"></div>
+    <script src="js/functions.js"></script>
+    <script src="js/menus.js"></script>
+    <script src="js/heartMoveCollision.js"></script>
+    <script src="js/attacks.js"></script>
+    <script src="js/chatbox.js"></script>
+    <script src="js/musControl.js"></script>
+    <script></script>
+  </body>
+</html>
